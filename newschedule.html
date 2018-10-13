@@ -1,4 +1,3 @@
-
 <html>
 <head>
 <title> My Schedule </title>
@@ -8,28 +7,32 @@
 title{
     text-align: center;
 }
-
 td, th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
 }
-
 tr:nth-child(even) {
     background-color: #dddddd;
 }
+
+
+
 </style>
 </head>
 <body>
+    <p type = "text" id = "title" name="title"></p>
+    <button type = "button" id="PreviousWeek" name="PreviousWeek">Previous</button>
+    <button type = "button" id="NextWeek" name="NextWeek">Next</button>
 <table id="schedule1">
 
-  <tr><td style="width:20mm">Monday </td>
-  <td style="width:20mm">Tuesday</td>
-  <td style="width:20mm"> Wednesday </td>
-  <td style="width:20mm">Thursday </td>
-  <td style="width:20mm">Friday</td>
-  <td style="width:20mm"> Saturday</td>
-  <td style="width:20mm"> Sunday </td>
+  <tr><td id="Monday" style="width:20mm">Monday </td>
+  <td id = "Tuesday" style="width:20mm">Tuesday</td>
+  <td id = "Wednesday" style="width:20mm"> Wednesday </td>
+  <td id = "Thursday" style="width:20mm">Thursday </td>
+  <td id = "Friday" style="width:20mm">Friday</td>
+  <td id = "Saturday" style="width:20mm"> Saturday</td>
+  <td id = "Sunday" style="width:20mm"> Sunday </td>
 
   <tr><td style="width:20mm"> </td>
   <td style="width:20mm"></td>
@@ -70,7 +73,12 @@ tr:nth-child(even) {
   <td style="width:20mm"></td>
   <td style="width:20mm"> </td>
   <td style="width:20mm"> </td>
+
   
   
 </tr> </table>
 
+<script src = "newschedule.js">
+    </script>
+</body>
+</html>
