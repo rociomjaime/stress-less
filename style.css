@@ -18,3 +18,53 @@ ul{
   display: inline;
   font-weight: bold
 }
+#banner {
+    margin-bottom:-12px;
+    background-color:#EEE;
+}
+
+span.banner {
+    color:#1986cb;
+}
+
+#banner a {
+    font-size:48px;
+    color:#9C6;
+    font-family:Georgia,Times,serif;
+    text-transform:uppercase;
+    font-weight:bold;
+    letter-spacing:-2px;
+    background:transparent;
+    padding-top:3px;
+    padding-left:7px;
+    margin-bottom:-10px;
+    align:center;
+}
+
+#banner a:hover {
+    color:#1986cb;
+}
+
+#intro {
+    padding:7px;
+    border-bottom:2px solid #CCC;
+    background: #9C6;
+    position:relative;
+    margin-left:-3px;
+    width:792px;
+
+}
+
+#slogan {
+    color:#06C;
+    font-size:13px;
+    text-transform: uppercase;
+    margin-top:3px;
+    letter-spacing:1px;
+}
+#slogan a {
+    background: transparent;
+    color:inherit;
+}
+#slogan a:hover {
+    color:#FFF;
