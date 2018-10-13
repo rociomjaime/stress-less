@@ -32,3 +32,18 @@ li{
   text-align: center;
   text-decoration: none;
 }
+li:link {
+  text-decoration: none;
+}
+li:visited {
+  text-decoration: none;
+}
+li:hover {
+  text-decoration-line: underline;
+  text-decoration-color: Dodgerblue;
+  text-decoration-style: wavy;
+
+}
+li:active {
+  text-decoration: underline;
+}
