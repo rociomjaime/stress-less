@@ -32,18 +32,21 @@ li{
   text-align: center;
   text-decoration: none;
 }
-li:link {
+a {
+ text-decoration: none;   
+}
+a:link {
   text-decoration: none;
 }
-li:visited {
+a:visited {
   text-decoration: none;
 }
-li:hover {
+a:hover {
   text-decoration-line: underline;
   text-decoration-color: Dodgerblue;
   text-decoration-style: wavy;
 
 }
-li:active {
+a:active {
   text-decoration: underline;
 }
