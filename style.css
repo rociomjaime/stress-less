@@ -1,0 +1,20 @@
+body {
+    background-color: #99ebff;
+    background-repeat: repeat-y;
+    background-image: url("notebook-paper-background-18.jpeg");
+    background-size: 1500px 800px;
+}
+h1 {
+    color: #262626;
+    font-family:'Courier New', 'Arial', 'Sans-Serif';
+    text-align: center;
+}
+p {
+    color: red;
+}
+ul{
+  font-family:'Courier New', 'Arial', 'Sans-Serif';
+  text-align: center;
+  display: inline;
+  font-weight: bold
+}
