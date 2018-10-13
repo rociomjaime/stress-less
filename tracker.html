@@ -1,8 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Schedule</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Sleep Tracker</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<!This is where someone can link the javascript file that this file is
+getting the data for the sleep tracker>
+<script> type ="text/javascript" src = "whatever.js" </script>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 10%;
+    padding: 10px;
+    height: 300px;
+/* height will change based on how much sleep the person gets */
+/* maybe multiply a certain amount of pixels by the number of hours of
+sleep they get?*/
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body{
+    text-align: center;
+}
+</style>
 </head>
 <body>
   <nav>
@@ -11,8 +42,59 @@
           <li><a href="tracker.html">Tracker</a></li>
       </ul>
   </nav>
-  <h1>a page for sleep statistics</h1>
-  <p>allow option for a week's summary, or month or overall.</p>
+  <h1>Your Sleep Statistics for this Week</h1>
+      <p>allow option for a week's summary, or month or overall.</p>
+
+<div class="row">
+<!I added some empty columns to give the illusion that the rest
+      of the collumns were centered>
+      
+<div class="column"></div>
+<div class="column"></div>
+<div class="column" style="background-color:#00CED1;">
+  <h2>Monday</h2>
+  <p>Time slept:</p>
+  <!document.write(sleephours), or whatever the variable will be called>
+</div>
+<div class="column" style="background-color:#8B008B;">
+  <h2>Tuesday</h2>
+  <p>Time slept:</p>
+  <!document.write(sleephours)> 
+  <p></p>
+</div>
+<div class="column" style="background-color:#90EE90;">
+  <h2>Wednesday</h2>
+  <p>Time slept:</p>
+  <!document.write(sleephours)> 
+  <p></p>
+</div>
+<div class="column" style="background-color:#0000CD;">
+  <h2>Thursday</h2>
+  <p>Time slept:</p>
+  <!document.write(sleephours)> 
+  <p></p>
+</div>
+<div class="column" style="background-color:#C71585;">
+  <h2>Friday</h2>
+  <p>Time slept:</p>
+  <!document.write(sleephours)> 
+  <p></p>
+</div>
+<div class="column" style="background-color:#2E8B57;">
+  <h2>Saturday</h2>
+  <p>Time slept:</p>
+  <!document.write(sleephours)>  
+  <p></p>
+</div>
+<div class="column" style="background-color:#5F9EA0;">
+  <h2>Sunday</h2>
+  <p>Time slept:</p>
+  <!document.write(sleephours)> 
+  <p></p>
+</div>
+
+</div>
+      
   <p>maybe include fun facts with time</p>
 </body>
 </html>
