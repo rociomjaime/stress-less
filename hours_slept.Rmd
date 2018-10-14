@@ -1,6 +1,6 @@
 ---
 title: "Hours Slept in a Week"
-author: "Olivia Baldwin"
+author: "Smith Hacks UMass"
 date: "10/13/2018"
 output: html_document
 ---
