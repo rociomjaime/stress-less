@@ -2,24 +2,35 @@
 <html>
 <head>
   <title>Schedule</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script></head>
 <body>
-  <nav>
-      <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="tracker.html">Tracker</a></li>
-      </ul>
-  </nav>
-<h1>a page for sleep statistics</h1>
+  <div class="container">
+    <ul class="nav nav-tabs" role="tablist">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="newschedule.html">Create New Schedule</a></li>
+      <li class="active"><a href="tracker.html">Sleep History</a></li>
+      <!-- <li><a href="#">About</a></li> -->
+    </ul>
+  </div>
 
-  <img id="week" src="week_graph.png" style="display:none" width= 500px height = 400px margin-left:"auto" margin-right:"auto">
-  <button type="button" onclick="document.getElementById('week').style.display='block'">View Last Week's Sleep History</button>
+  <div class="container">
+    <h1></h1>
+  </div>
 
-  <img id="month" src="sept_graph.png" style="display:none" width= 500px height = 400px margin-left:"auto" margin-right:"auto">
-  <button type="button" onclick="document.getElementById('month').style.display='block'">View Your Monthly Sleep History</button>
+  <div class="container">
+    <h2>Last week's sleep history</h2>
+    <a href="#week" class="btn btn-info" data-toggle="collapse">View</a>
+    <img class="collapse" id="week" src="week_graph.png" width = 500px length = 400px>
+    </div>
 
-  <p>allow option for a week's summary, or month or overall.</p>
-  <p>maybe include fun facts with time</p>
+    <div class="container">
+      <h2>Last month's sleep history</h2>
+      <a href="#month" class="btn btn-info" data-toggle="collapse">View</a>
+      <img class="collapse" id="month" src="sept_graph.png" length = 400px width = 500px>
+    </div>
+
 </body>
 </html>
