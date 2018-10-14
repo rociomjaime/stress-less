@@ -1,0 +1,29 @@
+---
+title: "Hours Slept in a Week"
+author: "Olivia Baldwin"
+date: "10/13/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(dplyr)
+library(lubridate)
+library(ggplot2)
+library(plotly)
+```
+
+```{r echo=FALSE, warning=FALSE}
+# day
+day <- c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")
+# time spent sleeping
+hours_slept <- c(8, 9, 7, 6, 10, 8, 10)
+# our dataframe
+sleep_data <- data.frame(day, hours_slept, stringsAsFactors=FALSE)
+sleep_data$day <- factor(sleep_data$day, levels = day)
+# plot of hours slept
+plot <- plot_ly(sleep_data, x = ~day, y = ~hours_slept, type = "bar") %>%
+  layout(yaxis = list(title = 'Number of Hours Slept'), xaxis = list(title = 'Days of the Week'))
+plot
+```
+
+
