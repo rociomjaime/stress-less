@@ -1,2 +1,2 @@
 # stress-less
-A website dedicated to promote management and improve sleep.
+A website dedicated to promote time management with an automatic schedule.
