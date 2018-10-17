@@ -4,7 +4,7 @@ body {
     background-image: url("notebook-paper-background-18.jpeg");
     background-size: 1500px 800px;
     text-decoration: none;
-    
+
 }
 h1 {
     color: #262626;
@@ -16,7 +16,7 @@ p {
   color: #262626;
   text-align: center;
   margin-top: 50px;
-  
+
 }
 
 ul{
@@ -50,19 +50,19 @@ tr:nth-child(even) {
 
 table{
     margin-left: 250px;
-    
+
 }
 
 input{
     margin-left: 150px;
     margin-top: 50px;
     margin-bottom: 0px;
-    
-    
+
+
 }
 
 button{
-    
+
     margin-left: 250px;
     margin-right:320px;
 }

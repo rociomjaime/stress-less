@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>StressLess</title>
+		<!-- link to main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<nav>
+    		<ul>
+        		<li><a href="index.html">Home</a></li>
+	        	<li><a href="tracker.html">Tracker</a></li>
+    		</ul>
+		</nav>
+    <h1>StressLess: Because Sleep Shouldn't Be Compromised</h1>
+		<div class="container">
+      <!-- <button id="make">Make a new schedule!</button>
+      <button id="show">Another button</button> -->
+      <form method = "post" action="connect.php">
+        username: <input type="text" name="username"><br>
+        password: <input type="password" name="password"><br>
+        <input type="submit" value="Submit">
+      </form>
+		</div><!-- /.container -->
+		<p type = "text" id = "title" name="title"></p>
+
+		<button type = "button" id="NextWeek" name="NextWeek">Next</button>
+		<button type = "button" id="PreviousWeek" name="PreviousWeek">Previous</button>
+
+		<div style: "text-align: left" width: 100%;>
+				<button onclick="window.location.href='addtask.html'">Add Task</button>
+				<button onclick="window.location.href='addevent.html'">Add Event</button>
+				<button onclick="window.location.href='deletetask.html'">Delete Task</button>
+				<button onclick="window.location.href='deleteevent.html'">Delete Event</button>
+		</div>
+		<table id="schedule1">
+
+		<tr><td id="Monday" style="width:20mm">Monday </td>
+		<td id = "Tuesday" style="width:20mm">Tuesday</td>
+		<td id = "Wednesday" style="width:20mm"> Wednesday </td>
+		<td id = "Thursday" style="width:20mm">Thursday </td>
+		<td id = "Friday" style="width:20mm">Friday</td>
+		<td id = "Saturday" style="width:20mm"> Saturday</td>
+		<td id = "Sunday" style="width:20mm"> Sunday </td>
+
+		<tr><td style="width:20mm"> </td>
+		<td style="width:20mm"></td>
+		<td style="width:20mm"> </td>
+		<td style="width:20mm"> </td>
+		<td style="width:20mm"></td>
+		<td style="width:20mm"> </td>
+		<td style="width:20mm"> </td>
+
+		<tr><td style="width:20mm"> </td>
+		<td style="width:20mm"></td>
+		<td style="width:20mm"> </td>
+		<td style="width:20mm"> </td>
+		<td style="width:20mm"></td>
+		<td style="width:20mm"> </td>
+		<td style="width:20mm"> </td>
+
+		<tr><td style="width:20mm"> </td>
+		<td style="width:20mm"></td>
+		<td style="width:20mm"> </td>
+		<td style="width:20mm"> </td>
+		<td style="width:20mm"></td>
+		<td style="width:20mm"> </td>
+		<td style="width:20mm"> </td>
+
+		<tr><td style="width:20mm"> </td>
+		<td style="width:20mm"></td>
+		<td style="width:20mm"> </td>
+		<td style="width:20mm"> </td>
+		<td style="width:20mm"></td>
+		<td style="width:20mm"> </td>
+		<td style="width:20mm"> </td>
+
+		<tr><td style="width:20mm"> </td>
+		<td style="width:20mm"></td>
+		<td style="width:20mm"> </td>
+		<td style="width:20mm"> </td>
+		<td style="width:20mm"></td>
+		<td style="width:20mm"> </td>
+		<td style="width:20mm"> </td>
+
+
+
+		</tr> </table>
+
+		<script src = "newschedule.js">
+		</script>
+
+	</body>
+</html>

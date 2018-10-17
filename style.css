@@ -4,6 +4,7 @@ body {
     background-image: url("notebook-paper-background-18.jpeg");
     background-size: 1500px 800px;
     text-decoration: none;
+
 }
 h1 {
     color: #262626;
@@ -12,12 +13,18 @@ h1 {
 }
 p {
   font-family:'Courier New', 'Arial', 'Sans-Serif';
-  color: red;
-  margin: 130px;
+  color: #262626;
+  text-align: center;
+  margin-top: 50px;
+
+}
+
+form{
+  font-family: 'Courier New', 'Arial', 'Sans-Serif';
 }
 
 ul{
-  font-family:'Courier New', 'Arial', 'Sans-Serif';
+  font-family:'Comic Sans MS', 'Arial', 'Sans-Serif';
   color: Dodgerblue;
   list-style-type: none;
   padding: 0;
@@ -32,21 +39,38 @@ li{
   text-align: center;
   text-decoration: none;
 }
-a {
- text-decoration: none;   
-}
-a:link {
-  text-decoration: none;
-}
-a:visited {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration-line: underline;
-  text-decoration-color: Dodgerblue;
-  text-decoration-style: wavy;
+
+img{
 
 }
-a:active {
-  text-decoration: underline;
+
+title{
+    text-align: center;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+table{
+    margin-left: 250px;
+
+}
+
+input{
+    margin-left: 150px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+
+
+}
+
+button{
+
+    margin-left: 250px;
+    margin-right:320px;
 }

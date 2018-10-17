@@ -1,5 +1,3 @@
-
-
 document.getElementById("NextWeek").addEventListener("click", nextPage);
 document.getElementById("PreviousWeek").addEventListener("click", previousPage);
 document.getElementById("name").onkeypress=function(e){
@@ -28,51 +26,49 @@ function nextPage(){
     week = nextpageclicker-previouspageclicker;
 
     monthnumToday = monthnumToday + (7*week);
-    
+
 
     document.getElementById(Today).innerHTML = Today + " " + monthnumToday;
-    
+
 
     for(i = 0; i <= wdnumToday; i++){
         document.getElementById(Days[wdnumToday-i]).innerHTML = Days[wdnumToday-i] + " " + (monthnumToday-i);
     }
 
-    
+
     for(i=Days.length-1;i>wdnumToday; i--){
         j = i - wdnumToday;
         document.getElementById(Days[i]).innerHTML = Days[i] + " " + (monthnumToday+j);
-        
+
     }
 
-    nextpageclicker = nextpageclicker + 1; 
+    nextpageclicker = nextpageclicker + 1;
 
 }
 
 function previousPage(){
     monthnumToday = currentDate.getDate()
-    
+
     week = nextpageclicker-previouspageclicker;
 
     monthnumToday = monthnumToday + (7*(week-2));
-    
+
 
     document.getElementById(Today).innerHTML = Today + " " + monthnumToday;
-    
+
 
     for(i = 0; i <= wdnumToday; i++){
         document.getElementById(Days[wdnumToday-i]).innerHTML = Days[wdnumToday-i] + " " + (monthnumToday-i);
     }
 
-    
+
     for(i=Days.length-1;i>wdnumToday; i--){
         j = i - wdnumToday;
         document.getElementById(Days[i]).innerHTML = Days[i] + " " + (monthnumToday+j);
-        
+
     }
 
-    previouspageclicker = previouspageclicker + 1; 
+    previouspageclicker = previouspageclicker + 1;
 
 
 }
-
-
